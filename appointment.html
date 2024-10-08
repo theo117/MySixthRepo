@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment - Max's Handyman Services</title>
+    <meta name="description" content="Schedule a convenient time for Max's Handyman Services. Fill out our online form to book an appointment for plumbing, electrical work, furniture assembly, and more.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Max's Handyman Services</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="appointment">
+            <h2>Book an Appointment</h2>
+            <p>Scheduling your service with Max's Handyman Services is quick and easy. Just fill out the form below with your details and preferred time, and we'll get in touch to confirm your appointment.</p>
+            
+            <form id="appointmentForm" action="appointment.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="service">Service Required:</label>
+                <select id="service" name="service" required>
+                    <option value="plumbing">Plumbing</option>
+                    <option value="electrical">Electrical Work</option>
+                    <option value="assembly">Furniture Assembly</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="details">Additional Details:</label>
+                <textarea id="details" name="details" rows="4" placeholder="Provide any specific information or requests about the service you need."></textarea>
+                
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+                
+                <button type="submit">Book Appointment</button>
+            </form>
+
+            <section class="confirmation">
+                <h3>What to Expect After Booking</h3>
+                <p>Once you submit the appointment form, our team will review your request and confirm your appointment via email or phone. If there are any issues with your selected time or if we need more information, we'll reach out to you as soon as possible.</p>
+                
+                <p>If you have any urgent queries or require immediate assistance, please call us directly at <strong>(123) 456-7890</strong>.</p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Max's Handyman Services. All rights reserved. <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+</body>
+</html>

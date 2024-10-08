@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Max's Handyman Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Max's Handyman Services</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! You can reach us through the form below or by using the contact details provided. Our team is ready to assist you with any inquiries or service requests.</p>
+            
+            <form id="contactForm" action="contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+            
+            <section class="contact-details">
+                <h3>Our Location</h3>
+                <p>123 Handyman Lane, Fixit City, HC 12345</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: <a href="mailto:info@maxshandymanservices.com">info@maxshandymanservices.com</a></p>
+                
+                <h3>Find Us</h3>
+                <div class="map-container">
+                    <!-- Embed Google Map -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.430528507347!2d-74.00594168459668!3d40.71277577933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3d4f7f5f89%3A0x20d16b3e52e7b40!2sNew%20York%2C%20NY%2010001!5e0!3m2!1sen!2sus!4v1615584604721!5m2!1sen!2sus" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"></iframe>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Max's Handyman Services. All rights reserved. <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
